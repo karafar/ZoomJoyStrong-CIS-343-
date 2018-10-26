@@ -674,7 +674,7 @@ YY_RULE_SETUP
 case 9:
 YY_RULE_SETUP
 #line 15 "zoomJoyStrong.yy"
-{ printf("DIGIT\n"); }
+{ printf("INT\n"); }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP

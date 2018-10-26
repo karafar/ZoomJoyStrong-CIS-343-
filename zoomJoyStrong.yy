@@ -4,16 +4,16 @@
  
 %%
  
-(END|end)	  			{ exit(0); }
-(;)           			{ printf("END_STATEMENT\n"); }
+(END|end)				{ exit(0); }
+(;)						{ printf("END_STATEMENT\n"); }
 (POINT)					{ printf("POINT\n"); }
 (LINE)					{ printf("LINE\n"); }
 (CIRCLE)				{ printf("CIRCLE\n"); }
 (RECTANGLE)				{ printf("RECTANGLE\n"); }
 (SET_COLOR)				{ printf("SET_COLOR"); }
 ([0-9]+.[0-9]*)			{ printf("FLOAT\n"); }
-[0-9]        			{ printf("DIGIT\n"); }
-\ |\n          ; // Ignore these chars!
+[0-9]					{ printf("INT\n"); }
+\ |\n					; // Ignore these chars!
 .+						{ printf("BAD_INPUT\n"); }
 
  
