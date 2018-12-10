@@ -22,4 +22,5 @@ CIRCLE|circle		{ return CIRCLE; }
 RECTANGLE|rectangle	{ return RECTANGLE; }
 SET_COLOR|set_color	{ return SET_COLOR; }
 [0-9]+			{ yylval.iVal = atoi(yytext); return INT; }	
+(\s)			;
 %%
