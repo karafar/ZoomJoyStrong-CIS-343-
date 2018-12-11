@@ -49,6 +49,7 @@ statement:	point
 	|	rectangle
 	|	set_color
 	|	END EOS { finish(); }
+	|	error {printf("Syntax error\n"); }
 ;
 
 point: 		POINT INT INT EOS 
